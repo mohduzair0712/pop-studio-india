@@ -1,0 +1,388 @@
+/* ============================================
+   BASIC RESPONSIVE CSS FOR POP STUDIO INDIA
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* ============================================
+   HOME SECTION
+   ============================================ */
+
+.home {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
+.about {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about > .container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.about-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.about-box h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.about-box p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* ============================================
+   SERVICES SECTION
+   ============================================ */
+
+.services {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* ============================================
+   GALLERY SECTION
+   ============================================ */
+
+.gallery {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+.contact {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.contact-info h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        background-color: #2c3e50;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 1rem 0;
+        border-bottom: 1px solid #34495e;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .about h2,
+    .services h2,
+    .gallery h2,
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 0;
+    }
+
+    .services-grid,
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .services h2,
+    .gallery h2,
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+}
